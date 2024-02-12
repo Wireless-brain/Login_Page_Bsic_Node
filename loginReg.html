@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Sign-up</title>
+    <link rel="stylesheet" href="/assets/styles.css" />
+  </head>
+  <body>
+    <h1>Sign-Up</h1>
+    <p>The the information for the fields</p>
+    <form method="post" action='http://localhost:8080/loginReg'>
+      <fieldset>
+        <label for="first-name">Enter Your First Name: <input id="first-name" name="first_name" type="text" required /></label>
+        <label for="last-name">Enter Your Last Name: <input id="last-name" name="last_name" type="text" required /></label>
+        <label for="email">Enter Your Email: <input id="email" name="email" type="email" required /></label>
+        <label for="new-password">Create a New Password: <input id="new-password" name="new_password" type="password" pattern="[a-z0-5]{8,}" required /></label>
+      </fieldset>
+      <input type="submit" value="Sign up" />
+    </form>
+  </body>
+</html>
